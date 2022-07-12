@@ -1,0 +1,14 @@
+<div>
+  <select (change)="responder($event)">
+    <option value="">Seleciona una respuesta</option>
+    <option value="verdadero">verdadero</option>
+    <option value="falso">falso</option>
+    <option value="N/C">N/C</option>
+  </select>
+  <p class="respuesta"> {{respuesta}}</p>
+</div>
+
+<div>
+  <input type="color" (input)="cambiarColor($event)">
+  <div class="caja" [style]="'background-color:' + color "></div>
+</div>

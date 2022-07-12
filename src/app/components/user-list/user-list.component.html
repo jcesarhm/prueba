@@ -1,0 +1,22 @@
+<div>
+  <select (change)="cargarGenero($event)">
+    <option value="">Selecciona un genero</option>
+    <option value="F"> Femenino</option>
+    <option value="M">Masculino</option>
+  </select>
+</div>
+
+
+<section class="usuarios" [innerHTML]="cargarUsuarios()">
+  <!-- <article>
+    <figure>
+      <img src="" alt="">
+    </figure>
+    <h3>Nombre del usuario</h3>
+    <ul>
+      <li>Telefono:</li>
+      <li>Email:</li>
+    </ul>
+    <hr>
+  </article> -->
+</section>
